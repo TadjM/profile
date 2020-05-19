@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import {Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
 const Styles = styled.div`  
   .navbar {
-      background-color : #222;
+    background-color : #222;
+    
   }
-  
-  .navbar-brand, .navbar-nav .nav-link{
-      color: #bbb;
-  
+  a, .navbar-brand, .navbar-nav .nav-link{
+      color: gray;
+      text-align: right;
 
     &:hover{
       color: white;
@@ -21,22 +22,41 @@ const Styles = styled.div`
 class Navigation extends Component {
     render() {
      return (
-       <Styles>
+      <Styles>
         <Navbar expand="lg">
-            <Navbar.Brand href="/">Tadj</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-               <Nav className="ml-aauto">
-                   <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                   <Nav.Item><Nav.Link href="/About">About</Nav.Link></Nav.Item>
-                   <Nav.Item><Nav.Link href="/Contact">Contact</Nav.Link></Nav.Item>
-                   <Nav.Item><Nav.Link href="/Portofolio">Portofolio</Nav.Link></Nav.Item>
-                   <Nav.Item><Nav.Link href="/Resume">Resume</Nav.Link></Nav.Item>
-               </Nav>
-            </Navbar.Collapse>
+          <Navbar.Brand href="/">TADJOUDINE MOUHAMED</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">   
+            <Nav className="ml-auto">
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to ="/">HOME</Link>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to ="/About">ABOUT</Link>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to ="/Contact">CONTACT</Link>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to ="/Portofolio">PROJECTS</Link>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>
+                  <Link to ="/Resume">RESUME</Link>
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
-            
-       </Styles>
+      </Styles>
      );
     
     }
