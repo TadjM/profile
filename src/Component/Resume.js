@@ -4,7 +4,7 @@ class Resume extends Component {
     render() {
         return (
             <div>
-                Hello mu resume
+               
             </div>
         );
     }

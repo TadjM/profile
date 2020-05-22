@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market');
+
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Chelsea Market';
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color : #222;
   font-size: medium;
   font-weight: lighter;
-  color: gray; 
+  color: white; 
   line-height: 1.6em;
   margin: 0;
   
@@ -20,10 +25,10 @@ code {
 }
 
 .footer{ 
+  line-height: 0px;
   text-align: center;
   margin-top: 40%;
-  padding: 20px;
-  
+  padding: 10px;
 }
 
 .footer ul{
@@ -38,12 +43,18 @@ code {
   text-align: center;
   color: gray;
   text-decoration: none;
-
 }
 
 .fa:hover {
   color:yellowgreen;
   text-decoration: none;
+}
+.footer p{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding-left: 30px;
+
 }
 
 .home {
@@ -51,7 +62,6 @@ code {
   
 }
 .home img {
-
   border-radius: 80%;
   padding: 5px;
   width: 120px;
@@ -59,6 +69,44 @@ code {
   
 }
 .home p{
-  font: bold 30px Arial, Helvetica, sans-serif;
-  line-height: 2em;
+  font-size: 35px; 
+  line-height: 50px; 
 }
+
+.projects {
+  margin-top: 0px;
+  border: 3px skyblue solid;
+  font-size: 10px;
+  color: gray;
+  float: left;
+  width: 10rem;
+  height: 15rem;
+  margin: 40px  40px;
+  
+} 
+.projects Button {
+  padding-bottom: 1px;
+  padding-top: 1px;
+  margin-bottom: 10px;
+}
+.contact{
+  text-align: center;
+  margin-top: 20%;
+}
+.contact a{
+  line-height: 60px;
+  padding: 40px;
+  font-size: 50px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact h{
+  font-size: 70px;
+}
+.contact p{
+  margin-top: 40px;
+  font-size: 40px;
+}
+

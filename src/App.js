@@ -32,7 +32,7 @@ function App() {
               <li><a href="https://github.com/TadjM" class="fa fa-github"></a></li>
               <li><a href="https://www.linkedin.com/in/tadj/" class="fa fa-linkedin"></a></li>
             </ul>
-            <p>Copyright &copy; 2020 Tadj</p>
+            <p>Copyright &copy; Tadj 2020 </p>
             </footer>
         </Layout>
       </Router>

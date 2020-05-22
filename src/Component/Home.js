@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Container} from 'react-bootstrap';
 import profile from '../Assets/profile.jpg';
 import '../index.css';
 
